@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.get('/',(req,res)=>{
-    res.json({message:"welcome"})
+    res.json({message:"welcome2"})
 })
 app.get("/api/message", (req, res) => {
   res.json({ message: "Hello from Backend 🚀" });
@@ -23,7 +23,7 @@ app.get("/api/mysq", async (req, res) => {
     res.json(rows);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: "Database error" });
+    res.status(500).json({ error: "Datasbase error" });
   }
 });
 
